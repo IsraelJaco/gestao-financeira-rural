@@ -56,3 +56,18 @@ SELECT
             (SELECT IFNULL(SUM(valor), 0) FROM investimentos)
         )
     ) AS saldo_final;
+
+    -- =====================================================
+-- Usuarios
+-- =====================================================
+
+    CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
+);
+
+INSERT INTO usuarios (usuario, senha)
+VALUES ('admin', '$2y$10$wH9vZzKZ6qKJq5uU7uQH0eQx3uXz9YQ0X8x0wM6x7Xnq0m1oK');
+
+

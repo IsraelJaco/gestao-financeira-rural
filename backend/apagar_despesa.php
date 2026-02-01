@@ -4,7 +4,7 @@ include "conexao.php";
 $id = $_GET['id'];
 
 if ($id) {
-    $stmt = $pdo->prepare("DELETE FROM receitas WHERE id = ?");
+    $stmt = $pdo->prepare("DELETE FROM despesas WHERE id = ?");
     $stmt->execute([$id]);
 }
 

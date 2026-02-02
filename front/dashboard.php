@@ -86,6 +86,7 @@ h2{
 
 <div class="menu">
     <a href="dashboard.php">Dashboard</a>
+    <a href="usuarios.php">Usuarios</a>
     <a href="receitas.php">Receitas</a>
     <a href="despesas.php">Despesas</a>
     <a href="investimentos.php">Investimentos</a>
